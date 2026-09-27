@@ -1,0 +1,186 @@
+
+## It helps to execute the same set of instructions for n number of times
+## It executes till the condition become False
+
+## syntax:
+
+# initialization
+# while condition:
+#     TSB
+#     updation
+
+# i = 1
+# while i <= 3:
+#     print('hi')
+#     i += 1      ## i = i + 1
+
+## WAP TO PRINT N NATURAL NUMBERS
+
+# number = int(input('enter the number: '))
+# i = 1
+# while i <=number:
+#     print(i)
+#     i += 1
+
+## Print multiplication table of a number
+
+# number = int(input('enter the number: '))
+# i = 1
+# while i <= 10:
+#     print(f'{number} X {i} = {number * i}')
+#     i += 1
+
+## WAP TO PRINT "N NATURAL" NUMBERS WHICH ARE DIVISIBLE BY 3
+
+# number = int(input('enter the number: '))
+# i = 1
+# while i <= number:
+#     if i % 3 == 0:
+#         print(i)
+#     i += 1
+
+## WAP TO EXTRACT ALL THE LOWERCASE CHARACTER FROM THE GIVEN STRING
+## input = 'A1b2c#' ==> output = 'bc'
+
+# string = input('enter the string: ')
+# new_string = ''
+# i = 0
+# while i < len(string):
+#     if string[i].islower():
+#         new_string += string[i]
+#     i += 1
+# print(new_string)
+
+# '' + 'b' ==> 'b'
+# 'b' + 'c' ==> 'bc'
+
+## WAP TO EXTRACT ONLY THE INTEGER FROM THE LIST COLLECTION
+## List = [1, 3.4, 3, 'hii', 8-9j] ===> out = [1, 3]
+
+# List = eval(input('enter the list: '))
+# new_list = []
+# i = 0
+# while i < len(List):
+#     if type(List[i]) == int:
+#         new_list += [List[i]]
+#     i += 1
+# print(new_list)
+
+# [] + [1] ==> [1]
+# [1] + [3] ==> [1,3]
+
+##or
+
+# List = eval(input('enter the list: '))
+# new_list = []
+# i = 0
+# while i < len(List):
+#     if type(List[i]) == int:
+#         new_list.append(List[i])
+#     i += 1
+# print(new_list)
+
+## WAP TO REMOVE THE DUPLICATE VALUES FROM THE LIST WITHOUT TYPECASTING
+# NAMES = ['apple', 'google', 'apple', 'apple', 'insta']
+# out = ['apple', 'google', 'insta']
+
+# List = eval(input('enter the list: '))
+# out = []
+# i = 0
+# while i < len(List):
+#     if List[i] not in out:
+#         out.append(List[i])
+#     i += 1
+# print(out)
+
+## WAP TO EXTRACT ALL THE FLOAT FROM THE TUPLE COLLECTION
+## Tuple = (1, 3.4, 5.3, 'hii', 8-9j) ==> out = (3.4, 5.3)
+
+# Tuple = eval(input('enter the tuple: '))
+# new_tuple = ()
+# i = 0
+# while i < len(Tuple):
+#     if type(Tuple[i]) == float:
+#         new_tuple += (Tuple[i],)
+#     i += 1
+# print(new_tuple)
+
+# () + (3.4,) ==> (3.4,)
+# (3.4,) + (5.3,) ==> (3.4,5.3)
+
+## TAKE A STRING INPUT, EXTRACT ALL THE UPPERCASE, LOWERCASE, DIGITS AND SPECIAL CHARACTER IN 4 DIFFERENT VARIABLE
+## String = 'A1b&2C3*D41'
+## upper = 'ACD'  lower = 'b' Digit = '123'  special = '&*'
+
+# string = input('enter the string: ')
+# upper, lower, digit, special = '', '', '', ''
+# i = 0
+# while i < len(string):
+#     if string[i].isupper():
+#         upper += string[i]
+#     elif string[i].islower():
+#         lower += string[i]
+#     elif string[i].isdigit():
+#         digit += string[i]
+#     else:
+#         special += string[i]
+#     i += 1
+# print(upper, lower, digit, special)
+
+# Write a program to convert all the lower case character to upper case
+# characters present in a given string
+# string = 'aBcD123' ==> out = 'ABCD123'
+# string = input("Enter string: ")
+# i=0
+# out=[]
+# while(i<len(string)):
+#     if(string[i].islower()):
+#         out+=string[i].upper()
+#     else:
+#         out+=string[i]
+#     i+=1
+# print(out)
+
+# Write a program to convert all the lower case character to upper case
+# character and upper case character to lower case character by keeping number
+# and special character as it is
+
+# string = 'aBcD123' ==> out =  'AbCd123'
+# string = input("Enter string: ")
+# i=0
+# out=[]
+# while(i<len(string)):
+#     if(string[i].islower()):
+#         out+=string[i].upper()
+#     elif(string[i].isupper()):
+#         out+=string[i].lower()
+#     else:
+#         out+=string[i]
+#     i+=1
+# print(out)
+
+
+## Write a program to return the positions of vowels present in the given string
+# string = 'aBcDEf123' #==> 0, 4
+# i=0
+# while(i<len(string)):
+#     if(string[i].lower() in ['a', 'e', 'i', 'o', 'u']):
+#         print(i)
+#     i+=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
