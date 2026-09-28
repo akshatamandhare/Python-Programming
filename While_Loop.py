@@ -265,6 +265,29 @@
 #         print(i)
 #     i+=1
 
+# Find the sum of elements in a list
+# l = [10, 20, 30, 40, 50]
+# i=0
+# sum=0
+# while(i<len(l)):
+#     sum+=l[i]
+#     i+=1
+# print(sum)
+
+
+# Count positive, negative and zero values
+# l = [10, -5, 0, 20, -8, 0, 15]
+# positive, negative, zero = 0, 0, 0
+# i=0
+# while(i<len(l)):
+#     if(l[i]<0):
+#         negative+=1
+#     elif(l[i]>0):
+#         positive+=1
+#     elif(l[i]==0):
+#         zero+=1
+#     i+=1
+# print("positive: ", positive,"\nNegative: ", negative, "\nZeros: ",zero);
 
 
 
