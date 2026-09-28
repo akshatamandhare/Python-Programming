@@ -159,20 +159,111 @@
 #     i+=1
 # print(out)
 
+# or
+
+# string = input("Enter string: ")
+# i=0
+# out=[]
+# while(i<len(string)):
+#     out+=string[i].swapcase()
+#     i+=1
+# print(out)
 
 ## Write a program to return the positions of vowels present in the given string
 # string = 'aBcDEf123' #==> 0, 4
 # i=0
 # while(i<len(string)):
-#     if(string[i].lower() in ['a', 'e', 'i', 'o', 'u']):
-#         print(i)
+#     if(string[i].lower() in 'aueiouAEIOU'):
+#         print(i, string[i])
 #     i+=1
 
+#WAP to extraact all the int numbers from the tuple only if the numbers present at odd index position
+# tuple = (10, 20, 30, 40, 50, "akshata", 'good')
+# i=0
+# new_tuple=[]
+# while(i<len(tuple)):
+#     if(i%2!=0 and type(tuple[i])==int):
+#         new_tuple += (tuple[i],)
+#     i+=2
+# print(new_tuple)
+
+#string is palinedrom or not without sclicing
+# string = input("enter string: ")
+# i=0
+# reverse_string = ''
+# while(i<len(string)):
+#     reverse_string = reverse_string + string[i] 
+#     i+=1
+
+# if(string == reverse_string):
+#     print("String Palindrom")
+# else:
+#     print("String not palindrom")
 
 
 
+## WAP to separate the positive and negative integer number present in list 
+# l = [1,2,3,-5,-6,-7] 
 
+# positive_list = []
+# negative_list = []
 
+# i = 0
+
+# while i < len(l):
+#     if l[i] > 0:
+#         positive_list.append(l[i])
+#     elif l[i] < 0:
+#         negative_list.append(l[i])
+#     i += 1
+# print("positive_list: ",positive_list, "negative_list: ", negative_list)
+
+# print("Positive numbers:", positive_list)
+# print("Negative numbers:", negative_list)
+
+#int sum cube
+# string =(input("Enter Sring: "))
+# i=0
+# sum =0
+# while(i<len(string)):
+#     if(string[i].isdigit()):
+#         sum+=int(string[i])**3
+#     i+=1
+# print("SUM: ", sum)
+
+# string = input("Enter String: ")
+# i=0
+# count, vowels, consonents = 0, 0, 0
+
+#count digit, vowels, and cons count
+#  while(i<len(string)):
+#     if(string[i].isdigit()):
+#         count+=1
+#     if(string[i].lower() in 'aeiou' ):
+#         vowels+=1
+#     if(string[i].lower() not in 'aeiou' ):
+#         consonents+=1
+#     i+=1
+# print(count, vowels, consonents)
+
+# Write a program to get the following output # input='abcd' 
+# # output={‘a’:97,’b’:98,’c’:99,’d’:100} 
+
+# string = input("Enter String: ")
+# i=0
+# dict ={}
+# while(i<len(string)):
+#     dict[string[i]] = ord(string[i])
+#     i+=1
+# print(dict)
+
+#print all the divisor of number
+# number = int(input("enter number: "))
+# i=1
+# while(i<=number):
+#     if(number%i==0):
+#         print(i)
+#     i+=1
 
 
 
