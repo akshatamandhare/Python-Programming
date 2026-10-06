@@ -15,7 +15,7 @@ for item in enumerate(string):
 for index, char in enumerate(string):
     print(index, char)
 
-##or
+##or 
 
 for index, char in enumerate(string, start = 100000000000000000000000000000000):
     print(index, char)
