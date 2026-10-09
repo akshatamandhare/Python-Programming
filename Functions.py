@@ -36,11 +36,11 @@
 
 ##1. WAP TO EXTRACT ALL THE INTEGER FROM THE GIVEN LIST
 
-# List = eval(input('enter the list: '))
-# out = []
-# for element in List:
-#     if type(element) == int:
-#         out.append(element)
+List = eval(input('enter the list: '))
+out = []
+for element in List:
+    if type(element) == int:
+        out.append(element)
 # print(out)
 
 ##or
