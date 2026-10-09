@@ -41,7 +41,7 @@ def ext_float():
 # b = 20              ## here "a" and "b" are the global variables
 # def Sam():
 #     return a + b
-# print(Sam())
+# print(Sam())9 
 
 ##2.
 
@@ -69,7 +69,7 @@ def ext_float():
 #     print(a + b)
 # Demo()
 
-## In this example the control takes the value of "b" as 200 because the preference will be
+## In this example the                                                                                                control takes the value of "b" as 200 because the preference will be
 ## given to the local variable first, it moves to the global scope only when we don't have a local variable
 
 ##2.
