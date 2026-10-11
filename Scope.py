@@ -116,11 +116,11 @@ def ext_float():
 
 ##5.
 
-# a = 50
-# def Demo():
-#     global a        ## The global keyword helps to access and modify the global value inside the function
-#     a = a + 10
-#     return a
+a = 50
+def Demo():
+    global a        ## The global keyword helps to access and modify the global value inside the function
+    a = a + 10
+    return a
 # print(a)
 # print(Demo())
 # print(a)
@@ -144,19 +144,19 @@ def ext_float():
 
 ##7.
 
-# a = 10
-# def outer():
-#     a = 20
-#     print(a)
-#     def inner():
-#         nonlocal a          ## It helps to access and modify the nonlocal variable inside the nested function
-#         a = a + 100
-#         print(a)
-#     print(a)
-#     inner()
-#     print(a)
-# print(a)
-# outer()
+a = 10
+def outer():
+    a = 20
+    print(a)
+    def inner():
+        nonlocal a          ## It helps to access and modify the nonlocal variable inside the nested function
+        a = a + 100
+        print(a)
+    print(a)
+    inner()
+    print(a)
+print(a)
+outer()
 # print(a)
 
 ##########################################################################################
@@ -192,7 +192,7 @@ def ext_float():
 def greet(name = 'Anu'):
     ## Here name is a non-mandatory arg
     print(f'Hello {name}')
-greet('Abhi')
+# greet('Abhi')
 
 ## Here it takes name as "Abhi" because the value we pass in the function for non-mandatary
 ## args get the preference it takes the default value only when have no value in the function call
@@ -214,11 +214,11 @@ greet('Abhi')
 
 def greeting(name, age = 27, pay = 400000):
     print(f'Hello myself {name} of age {age}years with pay Rs{pay}')
-greeting('Sonu', 25, 300000)
-greeting('Sonu')
-greeting(name = 'Sonu', age = 28, pay = 500000)
-# greeting(name = 'Sonu', 28, pay = 500000)           ## This throws the error because the positional argument follows keyword argument
-greeting('Sonu', 28, pay = 500000)
+# greeting('Sonu', 25, 300000)
+# greeting('Sonu')
+# greeting(name = 'Sonu', age = 28, pay = 500000)
+# # greeting(name = 'Sonu', 28, pay = 500000)           ## This throws the error because the positional argument follows keyword argument
+# greeting('Sonu', 28, pay = 500000)
 
 
 

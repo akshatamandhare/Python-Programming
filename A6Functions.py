@@ -178,21 +178,34 @@ def get_integer(list_):
 print(get_integer([10, 20, 50,859 ,35,1000, 100, "Akshata", 'good']))
 
 # 13. Give examples for each
-	# 1. local variable : 
+
+	# 1. local variable :  variable which we create inside the function and can be accessible inside but not accessible outside the function
     def get():
         a=10
-	# 2. Global variable
+        b=a
+	# 2. Global variable : variable which we create outside the function and can be accessible inside  and  outside the function
     a=10
     def get():
         b=10
+        b=a
+
 	# 3. What is global keyword, give an example
+    # glabal keyword helps to access and modifiy the the global value inside the function
+
     # we can global keyword into the  functon or outside the function 
+    # we  can write global keyword inside the function
 
 	# 4. What is non-local keyword, give an example
-    # 
+    # It helps to access and modify the nonlocal variable inside the nested function
 
 	# 5. Tuple Packing
-    #
+    # It helps to group the invividual iteams in the form of tuple 
+
 	# 6. Dictionary Packing
+    # It helps to group the invividual iteams in the form of dictionary 
+
 	# 7. Variable argument
+    # It helps to pass both positional and key args int the same program
+
 	# 8. Unpacking  
+    # It helps to divide the group intems into individuals iteams
