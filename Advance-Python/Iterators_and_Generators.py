@@ -48,7 +48,7 @@ iter_list = iter(List)          ## Iterators
 
 ##1. It stores the values in the memory
 ##2. It consist of only __iter__() attribute in it
-print(dir(List))
+# print(dir(List))
 ##3. We can iterate multiple times
 ##4. We can use indexing on iterables because we have the method __getitem__() in it
 # print(List[0], List[1], List[2], List[3])   ## or print(List.__getitem__(0))
@@ -58,9 +58,9 @@ print(dir(List))
 
 ## Iterators
 
-##1. It will store the values inside the memory it stores the address
+##1. It will not store the values inside the memory it stores the address
 ##2. It consist of both __iter__() and __next__() attribute in it
-print(dir(iter_list))
+# print(dir(iter_list))
 ##3. we can iterate only once, if we try to iterate multiple times we get the StopIteration error
 ##4. We can't use indexing on iterators because we don't have the method __getitem__() in it
 # print(iter_list[0], iter_list[1])
@@ -95,7 +95,7 @@ def Demo():
 # print(next(res))
 # print(next(res))
 # print(res.__next__())
-# # print(res.__next__())           ## Here we get StopIteration error because we have no element to fetch
+# print(res.__next__())           ## Here we get StopIteration error because we have no element to fetch
 
 ##or
 
@@ -156,14 +156,16 @@ string = 'hello hii good morning'
 
 # Generator to convert words to uppercase
 string = 'hello hii good morning'
-print(list( char.upper() for char in string ))
-
-
-
+# print(list( char.upper() for char in string ))
 
 # Generator to yield word and length of word in tuple form
 string = 'hello hii good evening'
+def get_string_len(string):
+    res=string.split()
+    for word in res:
+        yield (word, len(word))
 
+print(tuple(get_string_len(string)))
 
 
 
