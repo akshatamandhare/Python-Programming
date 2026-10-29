@@ -61,3 +61,36 @@ d1=demo2()
 # print(d1.add())
 # print(d1.add(2, 4))
 print(d1.add(2, 4, 7, 6))
+
+
+#######################################################################
+
+##3. Method Overriding: We must have at least 2 class. Here we will have the same method name
+## same number of args but the functionality differs based on the location
+
+class company1:
+    company_name = 'Infosys'
+    company_loc = 'Mysore'
+
+    def __init__(self, id, dept):
+        self.id = id
+        self.dept = dept
+
+    def info(self):
+        print(f'i am using {c.dept}')
+
+c1 = company1(101, 'IT')
+c=company1(102, 'Finance')
+# print(company1.company_name, company1.company_loc)
+# print(c1.company_name, c1.company_loc)
+# c1.info()
+# c.info()
+
+
+class company2(company1):
+    def info(self):
+        print("I am in company 2")
+
+c2=company2(104, 'HR')
+print(c2.dept, c2.company_loc)
+c2.info()
